@@ -69,8 +69,9 @@ export function About() {
                             aspect of our gym.
                         </p>
                         <blockquote className="italic text-yellow-400 border-l-4 border-yellow-400 pl-4 mb-6">
-                            "Fitness is not just about working out; it's about
-                            building a better version of yourself every day."
+                            &#x201C; Fitness is not just about working out; it's
+                            about building a better version of yourself every
+                            day.&#x201D;
                         </blockquote>
                     </motion.div>
                 </div>
