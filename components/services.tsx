@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
     Dumbbell,
-    MonitorIcon as Running,
     Users,
     Music,
     PersonStanding,

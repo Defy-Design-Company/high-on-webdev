@@ -25,7 +25,7 @@ export function About() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Meet Our Founder & Head Coach
+                        Meet Our Founder &amp; Head Coach
                     </h2>
                 </motion.div>
 
@@ -55,11 +55,11 @@ export function About() {
                             Deena Dhayalan
                         </h3>
                         <p className="text-lg mb-4">
-                            Certified Fitness Trainer & Nutrition Coach
+                            Certified Fitness Trainer &amp; Nutrition Coach
                         </p>
                         <p className="text-gray-300 mb-6">
-                            Passionate Visionary, Certified Fitness Trainer &
-                            Nutrition Coach founded High On with a great
+                            Passionate Visionary, Certified Fitness Trainer
+                            &amp; Nutrition Coach founded High On with a great
                             mission: to inspire people to prioritize their
                             health and embrace an active lifestyle.
                         </p>

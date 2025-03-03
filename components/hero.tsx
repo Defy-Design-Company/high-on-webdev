@@ -10,26 +10,28 @@ export function Hero() {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
+        const videoElement = videoRef.current;
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    videoRef.current?.play();
+                    videoElement?.play();
                 } else {
-                    videoRef.current?.pause();
+                    videoElement?.pause();
                 }
             },
             {
-                threshold: 0.3, // Trigger when 30% of Hero is visible
+                threshold: 0.3,
             }
         );
 
-        if (videoRef.current) {
-            observer.observe(videoRef.current);
+        if (videoElement) {
+            observer.observe(videoElement);
         }
 
         return () => {
-            if (videoRef.current) {
-                observer.unobserve(videoRef.current);
+            if (videoElement) {
+                observer.unobserve(videoElement);
             }
         };
     }, []);
