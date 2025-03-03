@@ -68,20 +68,22 @@ export function Amenities() {
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                         >
-                            <Card className="relative h-[350px] sm:h-[550px] md:h-[350px] lg:h-[330px] overflow-hidden bg-zinc-800 border-zinc-700 hover:border-yellow-400 transition-colors">
-                                <CardContent className="">
+                            <Card className="relative h-[350px] sm:h-[550px] md:h-[350px] lg:h-[330px] overflow-hidden bg-zinc-800 border-zinc-700 hover:border-yellow-400 transition-colors group">
+                                <CardContent className="relative w-full h-full">
                                     <Image
                                         style={{ objectFit: "cover" }}
-                                        className="absolute left-1/2 transform -translate-x-1/2"
+                                        className="absolute inset-0 w-full h-full transition-transform duration-300 group-hover:scale-110"
                                         src={amenity.image}
                                         alt={amenity.alt}
-                                    >
-                                        {/* <amenity.icon className="w-12 h-12 text-yellow-400 mb-4" />
-                    <h3 className="text-lg font-bold text-white mb-2">
-                      {amenity.title}
-                    </h3>
-                    <p className="text-zinc-400 text-sm">{amenity.description}</p> */}
-                                    </Image>
+                                    />
+                                    <div className="absolute inset-0 group-hover:bg-black/10 bg-black/60 transition-all duration-300 flex flex-col justify-center items-center text-center p-6">
+                                        <h3 className="text-lg font-bold text-yellow-400 mb-2">
+                                            {amenity.title}
+                                        </h3>
+                                        <p className="text-white text-sm">
+                                            {amenity.description}
+                                        </p>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </motion.div>
