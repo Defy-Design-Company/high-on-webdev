@@ -43,12 +43,44 @@ export function Hero() {
         >
             <div className="w-full h-full relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-[2] pointer-events-none"></div>
-
+                {/* 
                 <Image
                     className="object-cover opacity-80 pointer-events-none absolute z-[3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     src={logo}
                     alt="Logo"
-                />
+                /> */}
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="w-full h-screen flex items-center justify-center absolute z-[3] px-4 sm:px-6 md:px-8 lg:px-12"
+                >
+                    <div className="max-w-5xl mx-auto">
+                        <h1 className="text-center font-bold tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-4">
+                            Welcome to{" "}
+                            <span className="text-yellow-400">
+                                HighOn Fitness Studio
+                            </span>
+                        </h1>
+                        <p className="text-center text-zinc-300 text-sm sm:text-base md:text-lg lg:text-xl font-light mx-auto max-w-4xl">
+                            {" "}
+                            The Best{" "}
+                            <span className="text-white font-medium">
+                                gym in Sholinganallur, OMR, Chennai
+                            </span>
+                            , offering top-notch training facilities, expert
+                            personal coaching, and state-of-the-art equipment.
+                            Whether you're looking for{" "}
+                            <span className="text-white font-medium">
+                                strength training, weight loss programs,
+                                functional fitness, HIIT workouts, or
+                                personalized training
+                            </span>
+                            , we have it all.
+                        </p>
+                    </div>
+                </motion.div>
 
                 <video
                     ref={videoRef}
@@ -72,7 +104,7 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <p className="text-xl sm:text-balance md:text-nowrap tracking-tight md:text-2xl text-white mb-8">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 mb-8">
                         Step into a realm where strength meets style.
                     </p>
                 </motion.div>
@@ -85,7 +117,7 @@ export function Hero() {
                         repeatType: "reverse",
                     }}
                 >
-                    <ChevronDown className="w-8 h-8 text-yellow-400" />
+                    <ChevronDown className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-yellow-400" />
                 </motion.div>
             </div>
         </section>
