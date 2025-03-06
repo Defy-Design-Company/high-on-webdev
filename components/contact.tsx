@@ -198,19 +198,19 @@ export function Contact({ id }: { id?: string }) {
                                 </h3>
                                 <div className="flex space-x-4">
                                     <a
-                                        href="#"
+                                        href="https://www.instagram.com/high.on_fitness/"
                                         className="text-zinc-400 hover:text-yellow-400 transition-colors"
                                     >
                                         <Instagram className="w-6 h-6" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href="tel:+919445577662"
                                         className="text-zinc-400 hover:text-yellow-400 transition-colors"
                                     >
                                         <Phone className="w-6 h-6" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href="https://maps.app.goo.gl/DJeguXx9YU39ovMF9"
                                         className="text-zinc-400 hover:text-yellow-400 transition-colors"
                                     >
                                         <MapPin className="w-6 h-6" />
