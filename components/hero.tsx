@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
-import logo from "../public/assets/logo.png";
 
 export function Hero() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -43,13 +41,6 @@ export function Hero() {
         >
             <div className="w-full h-full relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-[2] pointer-events-none"></div>
-                {/* 
-                <Image
-                    className="object-cover opacity-80 pointer-events-none absolute z-[3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                    src={logo}
-                    alt="Logo"
-                /> */}
-
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

@@ -3,11 +3,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { FaWhatsapp } from "react-icons/fa";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Metadata needs to be in a separate variable since we're using 'use client'
 const metadataObj = {
     title: "High On Fitness Studio",
     description: "Step into a realm where strength meets style",
