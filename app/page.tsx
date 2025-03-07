@@ -6,6 +6,7 @@ import { About } from "@/components/about";
 import { Contact } from "@/components/contact";
 import { Navigation } from "@/components/navigation";
 import Head from "next/head";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
     return (
@@ -27,6 +28,7 @@ export default function Home() {
             <Amenities />
             <About />
             <Contact id="join-us" />
+            <Footer />
         </main>
     );
 }
